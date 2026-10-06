@@ -23,8 +23,6 @@
       h1 { margin:0; max-width:850px; font-family:"Instrument Serif",serif; font-size:clamp(56px,8.3vw,118px); font-weight:400; line-height:.8; letter-spacing:-.06em; }
       .intro-copy { align-self:end; margin:0; max-width:230px; color:var(--muted); line-height:1.6; }
       .intro-copy b { color:var(--paper); font-weight:500; }
-      .archive-head { display:flex; justify-content:space-between; align-items:center; padding:16px 32px; border-bottom:1px solid var(--line); color:var(--muted); }
-      .archive-head .accent { color:var(--accent); }
       .reveal-wrap { padding:0; background:#171715; }
       .reveal { --flash-x:50%; --flash-y:50%; position:relative; aspect-ratio:16 / 9; overflow:hidden; background:#20201d; cursor:crosshair; isolation:isolate; }
       .reveal::after { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:rgba(4,4,3,.6); transition:background .15s ease-out; }
@@ -34,7 +32,7 @@
       .reveal.is-active .hint { opacity:0; }
       .footer { padding:22px 32px 30px; display:flex; justify-content:space-between; color:var(--muted); }
       .footer span:last-child { color:var(--accent); }
-      @media (max-width:700px) { .nav { padding:0 17px; }.intro { min-height:335px; grid-template-columns:1fr; gap:22px; padding:46px 17px 36px; }.intro-copy { max-width:280px; }.archive-head { padding:15px 17px; }.reveal { aspect-ratio:auto; min-height:62svh; }.footer { padding:18px 17px 25px; } }
+      @media (max-width:700px) { .nav { padding:0 17px; }.intro { min-height:335px; grid-template-columns:1fr; gap:22px; padding:46px 17px 36px; }.intro-copy { max-width:280px; }.reveal { aspect-ratio:auto; min-height:62svh; }.footer { padding:18px 17px 25px; } }
     </style>
   </head>
   <body>
@@ -46,10 +44,6 @@
       <section id="top" class="intro">
         <h1>Things I keep<br /><em>returning to.</em></h1>
         <p class="intro-copy"><b></b><br /></p>
-      </section>
-      <section id="inspiration" class="archive-head" aria-label="Inspiration archive">
-        <span><span class="accent">●</span> selected collage</span>
-        <span>hover to reveal</span>
       </section>
       <section class="reveal-wrap">
         <div class="reveal" id="reveal-area">
